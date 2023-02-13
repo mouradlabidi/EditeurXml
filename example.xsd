@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <xsd:element name="courses">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="course" minOccurs="0" maxOccurs="unbounded">
+                    <xsd:complexType>
+                        <xsd:all>
+                            <xsd:element name="name" type="xsd:string"/>
+                            <xsd:element name="price" type="xsd:double"/>
+                        </xsd:all>
+                        <xsd:attribute name="id" type="xsd:string" use="required"/>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+</xsd:schema>

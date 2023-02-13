@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<courses xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="example.xsd">
+  
+    <course id="1">
+        <name>JDOM XSD Validation</name>
+        <price>0.0</price>
+    </course>
+    <course id="2">
+        <name>Validate XML against XSD Schema</name>
+        <price>0.0</price>
+    </course>
+    <course id="3">
+        <name>
+            <![CDATA[
+               characters & ? $ ^ with markup
+            ]]>
+        </name>
+        <price>12.0</price>
+    </course>
+</courses>

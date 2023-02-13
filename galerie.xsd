@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+   <xs:element  name="contenu">
+       <xs:complexType>
+          <xs:sequence>
+             <xs:element name="type" type="xs:string" />
+             <xs:element name="auteur" type="xs:string" />
+             <xs:element name="titre" type="xs:string" minOccurs="0" />
+             <xs:element name="prix" type="xs:double" minOccurs="0" />
+          </xs:sequence>
+       </xs:complexType>
+   </xs:element>
+   
+   <xs:element  name="galerie">
+       <xs:complexType>
+          <xs:sequence>
+             <xs:element name="gerant" type="xs:string" />
+             <xs:element ref="contenu" minOccurs="1" maxOccurs="unbounded" />
+          </xs:sequence>
+          <xs:attribute name="adresse" type="xs:string" use="required" />
+       </xs:complexType>
+   </xs:element>
+
+   <xs:element name="galeries">
+      <xs:complexType>
+          <xs:sequence>
+             <xs:element ref="galerie" minOccurs="1" maxOccurs="unbounded" />
+          </xs:sequence>
+       </xs:complexType>
+   </xs:element>
+</xs:schema>

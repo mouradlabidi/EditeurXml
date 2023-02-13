@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<galeries xs:noNamespaceSchemaLocation="galerie.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance">
+<galerie adresse="3 rue du bourg 22250 TREMEUR">
+<gerant>Jean CAISSE</gerant>
+<contenu>
+<type>sculpture</type>
+<auteur>Rodin</auteur>
+<titre>Le penseur</titre>
+<prix>25</prix>
+</contenu>
+<contenu>
+<type>peinture</type>
+<auteur>Herby Cyrille</auteur>
+<titre>Ma peinture</titre>
+</contenu>
+</galerie>
+<galerie adresse="24 boulvard de Svign 75000 PARIS">
+<gerant>Marc MOISSA</gerant>
+<contenu>
+<type>sculpture</type>
+<auteur>Tony Williams</auteur>
+<prix>123.25</prix>
+</contenu>
+<contenu>
+<type>canevas</type>
+<auteur>Mamy HERBY</auteur>
+<titre>Mon coussin</titre>
+<prix>12</prix>
+</contenu>
+</galerie>
+</galeries>
