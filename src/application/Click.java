@@ -90,7 +90,7 @@ public class Click extends Application {
 	public void start(Stage primaryStage) {
 			//button new file
 		    Button btn = new Button();
-		    Image img = new Image("C:\\Users\\dreams\\Documents\\Eclipse Project\\Click\\src\\addfile.png",23, 23,false, false);
+		    Image img = new Image("C:\\Users\\dreams\\Documents\\Eclipse Project\\EditeurXml\\src\\addfile.png",23, 23,false, false);
 		    ImageView nv = new ImageView();
 		    nv.setImage(img);
 		    btn.setGraphic(nv);
@@ -100,7 +100,7 @@ public class Click extends Application {
 
 		    //button open folder
 		    Button btn1 = new Button();
-		    Image img2 = new Image("C:\\Users\\dreams\\Documents\\Eclipse Project\\Click\\src\\openfolder.png",23, 23,false, false);
+		    Image img2 = new Image("C:\\Users\\dreams\\Documents\\Eclipse Project\\EditeurXml\\src\\openfolder.png",23, 23,false, false);
 		    ImageView nv2 =  new ImageView();
 		    nv2.setImage(img2);
 		    btn1.setGraphic(nv2);
@@ -108,23 +108,23 @@ public class Click extends Application {
 		    
 		    //button save
 		    Button btn2 = new Button();
-		    Image img3 = new Image("C:\\Users\\dreams\\Documents\\Eclipse Project\\Click\\src\\Save.png",23, 23,false, false);
+		    Image img3 = new Image("C:\\Users\\dreams\\Documents\\Eclipse Project\\EditeurXml\\src\\Save.png",23, 23,false, false);
 		    ImageView nv3 =  new ImageView();
 		    nv3.setImage(img3);
 		    btn2.setGraphic(nv3);
 		    btn2.setTooltip(new Tooltip("Enregistrer"));
 		    
-		    //button vérifier la justesse du fichier
+		    //button vÃ©rifier la justesse du fichier
 		    Button btn3 = new Button();
-		    Image img4 = new Image("C:\\Users\\dreams\\Documents\\Eclipse Project\\Click\\src\\juste.png",23, 23,false, false);
+		    Image img4 = new Image("C:\\Users\\dreams\\Documents\\Eclipse Project\\EditeurXml\\src\\juste.png",23, 23,false, false);
 		    ImageView nv4 = new ImageView();
 		    nv4.setImage(img4);
 		    btn3.setGraphic(nv4);
-		    btn3.setTooltip(new Tooltip("Bien formé!"));
+		    btn3.setTooltip(new Tooltip("Bien formÃ©!"));
 		    
-		    //button validité
+		    //button validitÃ©
 		    Button btn4 = new Button();
-		    Image img5 = new Image("C:\\Users\\dreams\\Documents\\Eclipse Project\\Click\\src\\valide.png",23, 23,false, false);
+		    Image img5 = new Image("C:\\Users\\dreams\\Documents\\Eclipse Project\\EditeurXml\\src\\valide.png",23, 23,false, false);
 		    ImageView nv5 = new ImageView();
 		    nv5.setImage(img5);
 		    btn4.setGraphic(nv5);
@@ -132,7 +132,7 @@ public class Click extends Application {
 		    
 		    //button search Element searchElement
 		    Button btn5 = new Button();
-		    Image img6 = new Image("C:\\Users\\dreams\\Documents\\Eclipse Project\\Click\\src\\searchElement.png",23, 23,false, false);
+		    Image img6 = new Image("C:\\Users\\dreams\\Documents\\Eclipse Project\\EditeurXml\\src\\searchElement.png",23, 23,false, false);
 		    ImageView nv6 = new ImageView();
 		    nv6.setImage(img6);
 		    btn5.setGraphic(nv6);
@@ -140,14 +140,14 @@ public class Click extends Application {
 		    
 		    //button search atrribut
 		    Button btn6 = new Button();
-		    Image img7 = new Image("C:\\Users\\dreams\\Documents\\Eclipse Project\\Click\\src\\findAttribut.png",23, 23,false, false);
+		    Image img7 = new Image("C:\\Users\\dreams\\Documents\\Eclipse Project\\EditeurXml\\src\\findAttribut.png",23, 23,false, false);
 		    ImageView nv7 = new ImageView();
 		    nv7.setImage(img7);
 		    btn6.setGraphic(nv7);
 		    btn6.setTooltip(new Tooltip("chercher un Attribut"));
 		    //button transforme
 		    Button btn7 = new Button();
-		    Image img8 = new Image("C:\\Users\\dreams\\Documents\\Eclipse Project\\Click\\src\\Transforme.png",23, 23,false, false);
+		    Image img8 = new Image("C:\\Users\\dreams\\Documents\\Eclipse Project\\EditeurXml\\src\\Transforme.png",23, 23,false, false);
 		    ImageView nv8 = new ImageView();
 		    nv8.setImage(img8);
 		    btn7.setGraphic(nv8);
@@ -177,7 +177,7 @@ public class Click extends Application {
 	        Menu menu4 = new Menu("Transformer");
 	  
 	        // create menuitems to Menu (File) with icon
-	        MenuItem m1 = new MenuItem("Créer");
+	        MenuItem m1 = new MenuItem("CrÃ©er");
 	        ImageView create= new ImageView();
 	        create.setImage(img);
 	        m1.setGraphic(create);
@@ -194,7 +194,7 @@ public class Click extends Application {
 	        m3.setAccelerator(KeyCombination.keyCombination("Ctrl + S"));
 	        MenuItem m4 = new MenuItem("Quitter");
 	        ImageView exit= new ImageView();
-	        Image img10 = new Image("C:\\Users\\dreams\\Documents\\Eclipse Project\\Click\\src\\exit.png",23, 23,false, false);
+	        Image img10 = new Image("C:\\Users\\dreams\\Documents\\Eclipse Project\\EditeurXml\\src\\exit.png",23, 23,false, false);
 	        exit.setImage(img10);
 	        m4.setGraphic(exit);
 	       
@@ -206,11 +206,11 @@ public class Click extends Application {
 	        
 	  
 	        // create menuitems to Menu (Analyser) with icons
-	        MenuItem mA1 = new MenuItem("Vérifier justesse de forme");
-	        ImageView vérifier= new ImageView();
-	        vérifier.setImage(img4);
-	        mA1.setGraphic(vérifier);
-	        MenuItem mA2 = new MenuItem("Validé");
+	        MenuItem mA1 = new MenuItem("VÃ©rifier justesse de forme");
+	        ImageView vÃ©rifier= new ImageView();
+	        vÃ©rifier.setImage(img4);
+	        mA1.setGraphic(vÃ©rifier);
+	        MenuItem mA2 = new MenuItem("ValidÃ©");
 	        ImageView valider= new ImageView();
 	        valider.setImage(img5);
 	        mA2.setGraphic(valider);
@@ -225,7 +225,7 @@ public class Click extends Application {
 	        
 	        
 	        // create menuitems to Menu (Rechercher) with icons
-	        MenuItem mR1 = new MenuItem("Elément");
+	        MenuItem mR1 = new MenuItem("ElÃ©ment");
 	        ImageView element= new ImageView();
 	        element.setImage(img6);
 	        mR1.setGraphic(element);
@@ -295,7 +295,7 @@ public class Click extends Application {
 	        //**************************************-----------------------------
 	       
 	        
-		//écouteur pour mettre à jour le titre de l'onglet  lorsqu'un utilisateur modifie le contenu de la zone de texte associée
+		//Ã©couteur pour mettre Ã  jour le titre de l'onglet  lorsqu'un utilisateur modifie le contenu de la zone de texte associÃ©e
 	        tabPane.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
 	            try {
 		        	StackPane stackPane = (StackPane) newValue.getContent();
@@ -337,7 +337,7 @@ public class Click extends Application {
 			
 			primaryStage.setScene(scene);
 			primaryStage.setTitle("Editor XML");
-			Image img9 = new Image("C:\\Users\\dreams\\Documents\\Eclipse Project\\Click\\src\\EditorXml.png");
+			Image img9 = new Image("C:\\Users\\dreams\\Documents\\Eclipse Project\\EditeurXml\\src\\EditorXml.png");
 			primaryStage.getIcons().add(img9);
 			//primaryStage
 			primaryStage.show();
@@ -496,14 +496,14 @@ public class Click extends Application {
 			});
 			
 			
-			//addevent Bien formé to Button and menuItem
+			//addevent Bien formÃ© to Button and menuItem
 			mA1.setOnAction(new EventHandler<ActionEvent>(){
 
 				@Override
 				public void handle(ActionEvent arg0) {
 					// TODO Auto-generated method stub
 					
-					bienformé(tabPane,labeldisplay);
+					bienformÃ©(tabPane,labeldisplay);
 				}
 				
 			});
@@ -513,13 +513,13 @@ public class Click extends Application {
 				@Override
 				public void handle(ActionEvent arg0) {
 					// TODO Auto-generated method stub
-					bienformé(tabPane,labeldisplay);
+					bienformÃ©(tabPane,labeldisplay);
 				}
 				
 			});
            
 			
-			//add event Validé to Button and MeniItem
+			//add event ValidÃ© to Button and MeniItem
 			btn4.setOnAction(new EventHandler<ActionEvent>() {
 
 				@Override
@@ -540,7 +540,7 @@ public class Click extends Application {
 				
 			});
 			
-			//add event charcher un élément
+			//add event charcher un Ã©lÃ©ment
 			btn5.setOnAction(new EventHandler<ActionEvent>() {
 
 				@Override
@@ -614,7 +614,7 @@ public class Click extends Application {
 
 					        TransformerFactory tFactory=TransformerFactory.newInstance(); 
 					        OutputStream htmlFile=new FileOutputStream(outputFileName);
-					      //Une instance de cette classe abstraite peut transformer une arborescence source en une arborescence de résultats.
+					      //Une instance de cette classe abstraite peut transformer une arborescence source en une arborescence de rÃ©sultats.
 					        Transformer trasform=tFactory.newTransformer(xslDoc);
 					        trasform.transform(xmlDoc, new StreamResult(htmlFile));
 					        System.out.print("aaa");
@@ -681,7 +681,7 @@ public class Click extends Application {
 						        String outputFileName=xsld.replace(".xsl", ".html");
 		
 						        OutputStream htmlFile=new FileOutputStream(outputFileName);
-						      //Une instance de cette classe abstraite peut transformer une arborescence source en une arborescence de résultats.
+						      //Une instance de cette classe abstraite peut transformer une arborescence source en une arborescence de rÃ©sultats.
 						        Transformer trasform=tFactory.newTransformer(xslDoc);
 						        trasform.transform(xmlDoc, new StreamResult(htmlFile));
 						        System.out.print("aaa");
@@ -787,7 +787,7 @@ public class Click extends Application {
 			scene.getAccelerators().put(keyCodeCombination, new Runnable() {
 			    @Override public void run() {
 			        // Code to be executed when the key combination is pressed
-			    	// Code pour créer le fichier ici
+			    	// Code pour crÃ©er le fichier ici
 			    	opentab(tabPane);
 			    }
 			});
@@ -920,7 +920,7 @@ public class Click extends Application {
 			return fileChooser;
 	}
 	
-	public void bienformé(TabPane tabPane, Label labeldisplay) {
+	public void bienformÃ©(TabPane tabPane, Label labeldisplay) {
 		 
 		try {
 			Tab selectedTab = tabPane.getSelectionModel().getSelectedItem();
@@ -940,7 +940,7 @@ public class Click extends Application {
 
 	                    Document document = saxBuilder.build(new ByteArrayInputStream(content.getBytes(StandardCharsets.UTF_8)));
 	                    //saxBuilder.setValidation(true);
-	                    labeldisplay.setText("Document bien formé");
+	                    labeldisplay.setText("Document bien formÃ©");
 			            break;
 			        }
 			    }						    
@@ -949,14 +949,14 @@ public class Click extends Application {
                 catch (Exception e1) { //Catch the exception if any occurs and print the error message in console output.
                        // System.out.println(e1.getMessage());
                      // Header Text: null
-                	labeldisplay.setText("Document n'est pas bien formé\n"+" à cause de "+e1.getMessage());
+                	labeldisplay.setText("Document n'est pas bien formÃ©\n"+" Ã  cause de "+e1.getMessage());
                 }
 	}
 	
 	public void Valide(TabPane tabPane, Label labeldisplay) {
 		
 		
-		// par rapport à un xmlshéma
+		// par rapport Ã  un xmlshÃ©ma
 		Tab selectedTab = tabPane.getSelectionModel().getSelectedItem();	
 		String tit = selectedTab.getText();
         if (tit.endsWith(".xml") || tit.endsWith(".xsl")) {
@@ -981,23 +981,23 @@ public class Click extends Application {
 					validator.validate(new StreamSource(new File(filea.toAbsolutePath().toString())));
 					//validator.validate(new StreamSource(new File("C:\\Users\\dreams\\AppData\\Local\\XML Copy Editor\\XML COPY TP\\galeries.xml")));
 					
-					System.out.println("validé par rapport xsd");
-					labeldisplay.setText("Validé par rapport xsd");
+					System.out.println("validÃ© par rapport xsd");
+					labeldisplay.setText("ValidÃ© par rapport xsd");
 					}   catch (IOException e) {
 							// TODO Auto-generated catch block
-							System.out.println("à cause de "+e.getMessage());
+							System.out.println("Ã  cause de "+e.getMessage());
 						}
 						catch (SAXParseException e) {
-						labeldisplay.setText("Erreur lors du validation du xml par rapport au xml shéma\n"+e.getMessage()+"\n"+"ligne : "+e.getLineNumber()+"\n"+"colonne : "+e.getColumnNumber());
-						 System.out.println("Erreur lors du validation du xml par rapport au xml shéma");
+						labeldisplay.setText("Erreur lors du validation du xml par rapport au xml shÃ©ma\n"+e.getMessage()+"\n"+"ligne : "+e.getLineNumber()+"\n"+"colonne : "+e.getColumnNumber());
+						 System.out.println("Erreur lors du validation du xml par rapport au xml shÃ©ma");
 						 System.out.println(e.getMessage());
 						 System.out.println("ligne : "+e.getLineNumber());
 						 System.out.println("colonne : "+e.getColumnNumber());
 						 }
 						catch (SAXException e) {
 							// TODO Auto-generated catch block
-							labeldisplay.setText("à cause de "+e.getMessage());
-							System.out.println("à cause de "+e.getMessage());			
+							labeldisplay.setText("Ã  cause de "+e.getMessage());
+							System.out.println("Ã  cause de "+e.getMessage());			
 						}
         }
         /*try {
@@ -1021,10 +1021,10 @@ public class Click extends Application {
 						}
 					 catch (JDOMException e) {
 						 labeldisplay.setText("document n'est pas valide\n");
-						 labeldisplay.setText("à cause de "+e.getMessage());
+						 labeldisplay.setText("Ã  cause de "+e.getMessage());
 					 }catch(IOException e){
 						 	labeldisplay.setText("Could not check ");
-						 	labeldisplay.setText("à cause de "+e.getMessage());
+						 	labeldisplay.setText("Ã  cause de "+e.getMessage());
 						}
 		            break;
 		        }
@@ -1033,8 +1033,8 @@ public class Click extends Application {
         }catch (Exception e1) { //Catch the exception if any occurs and print the error message in console output.
                    // System.out.println(e1.getMessage());
                  // Header Text: null
-        	labeldisplay.setText("document n'est pas bien formé\n");
-			labeldisplay.setText("à cause de "+e1.getMessage());
+        	labeldisplay.setText("document n'est pas bien formÃ©\n");
+			labeldisplay.setText("Ã  cause de "+e1.getMessage());
             }*/
 	}
 	
